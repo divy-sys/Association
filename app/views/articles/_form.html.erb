@@ -1,0 +1,14 @@
+<%= form_with(model: @article) do |art| %>
+
+  <h3>Title </h3>
+  <p><%= art.text_field :title %></p>
+
+  <h3>Description</h3>
+  <p><%= art.text_field :description  %></p>
+
+  <h3> User </h3>
+  <p><%= art.collection_select :user_id, User.all, :id, :username %> </p>
+  
+  <p><%= art.submit %> </p>
+
+<% end %>
