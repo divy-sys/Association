@@ -2,5 +2,6 @@
 
 <p>Title: <%= @article.title %> </p>
 <p>Description: <%= @article.description %> </p>
+<p>User: <%= @article.user.username %> </p>
 
 <%= link_to "return", articles_path  %>

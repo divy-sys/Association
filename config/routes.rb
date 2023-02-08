@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   root "articles#index"
   resources :articles
+  get "signup", to: "users#new"
 end
