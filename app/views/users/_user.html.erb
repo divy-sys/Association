@@ -2,6 +2,9 @@
   <p>
     <strong>Username:</strong>
     <%= user.username %>
-  </p>
 
+  </p>
+  <%= link_to gravatar_for(user, size: 200), user %>
+<%= render "articles/article" %>
 </div>
+
