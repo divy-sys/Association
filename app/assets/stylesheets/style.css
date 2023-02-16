@@ -1,5 +1,15 @@
+* {
+  color: #566787;
+  background: #f5f5f5;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+}
+
 .heading h1 {
   color: red;
+  margin-top: 10px;
   margin-left: 84vh;
   font-size: 43px;
 }
@@ -25,11 +35,13 @@ th {
 th,td {
     border: 1px solid black;
 }
-a {
+.create_article_button a {
+  margin-top: 30px;
   text-decoration: none;
   color: black;
-  font-size: 20px;
+
 }
+
 .create_article_button {
   display: flex;
 }
@@ -39,8 +51,15 @@ a {
   margin-top: 30px;
 
 }
+.create_article_button {
+  margin-top: 20px;
+  margin-left: 50vh;
+}
 .create_article_button a {
-  font-size: 25px;
+  font-size: 20px;
+  
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 14vh;
 }
 .create_article_button a:hover {
   color: green;
@@ -50,7 +69,8 @@ a {
 
 /*/////////////////// Pagintion \\\\\\\\\\\\\\\\\\\\\*/
 .digg_pagination {
-  background: white;
+  color: #566787;
+  background: #f5f5f5
   cursor: default;
   /* self-clearing method: */ }
   .digg_pagination a, .digg_pagination span, .digg_pagination em {
@@ -95,4 +115,35 @@ a {
     height: 1%; }
   *:first-child + html .digg_pagination {
     overflow: hidden; 
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.form-div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
